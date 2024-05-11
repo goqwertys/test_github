@@ -2,12 +2,14 @@
 Hello World
 """
 
-from src.hello_world import greetings
-
+from src.hello_world import greetings, text_reverse
 
 def main():
     name = input("What is your name?\n")
-    greetings("Pavel")
+    greetings(name)
+    # Turning to TWIN PEAKS MODE
+    print("Welcome to Twin Peaks")
+    greetings(text_reverse(name))
 
 
 if __name__ == "__main__":
